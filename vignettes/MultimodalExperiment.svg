@@ -1,0 +1,81 @@
+<svg viewBox="0.00 0.00 368.00 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 100%; height: 100%;">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-400 364,-400 364,4 -4,4"></polygon>
+<g id="node1" class="node">
+<polygon fill="none" stroke="#000000" points="108,-396 0,-396 0,-288 108,-288 108,-396"></polygon>
+<text text-anchor="middle" x="54" y="-337.8" font-family="sans-serif" font-size="14.00" fill="#000000">RNA-seq</text>
+</g>
+<g id="node2" class="node">
+<polygon fill="none" stroke="#000000" points="108,-252 0,-252 0,-144 108,-144 108,-252"></polygon>
+<text text-anchor="middle" x="54" y="-193.8" font-family="sans-serif" font-size="14.00" fill="#000000">deconvolution</text>
+</g>
+<g id="edge1" class="edge">
+<path fill="none" stroke="#000000" d="M54,-287.97C54,-279.6864 54,-271.0638 54,-262.5801"></path>
+<polygon fill="#000000" stroke="#000000" points="57.5001,-262.3328 54,-252.3328 50.5001,-262.3328 57.5001,-262.3328"></polygon>
+</g>
+<g id="node9" class="node">
+<polygon fill="none" stroke="#000000" points="234,-396 126,-396 126,-288 234,-288 234,-396"></polygon>
+<text text-anchor="middle" x="180" y="-337.8" font-family="sans-serif" font-size="14.00" fill="#000000">projection</text>
+</g>
+<g id="edge9" class="edge">
+<path fill="none" stroke="#000000" d="M108.1406,-342C110.6275,-342 113.1143,-342 115.6011,-342"></path>
+<polygon fill="#000000" stroke="#000000" points="115.8248,-345.5001 125.8248,-342 115.8247,-338.5001 115.8248,-345.5001"></polygon>
+</g>
+<g id="node3" class="node">
+<polygon fill="none" stroke="#000000" points="108,-108 0,-108 0,0 108,0 108,-108"></polygon>
+<text text-anchor="middle" x="54" y="-49.8" font-family="sans-serif" font-size="14.00" fill="#000000">dcRNA-seq</text>
+</g>
+<g id="edge2" class="edge">
+<path fill="none" stroke="#000000" d="M54,-143.97C54,-135.6864 54,-127.0638 54,-118.5801"></path>
+<polygon fill="#000000" stroke="#000000" points="57.5001,-118.3328 54,-108.3328 50.5001,-118.3328 57.5001,-118.3328"></polygon>
+</g>
+<g id="node4" class="node">
+<polygon fill="none" stroke="#000000" points="234,-108 126,-108 126,0 234,0 234,-108"></polygon>
+<text text-anchor="middle" x="180" y="-49.8" font-family="sans-serif" font-size="14.00" fill="#000000">projection</text>
+</g>
+<g id="edge3" class="edge">
+<path fill="none" stroke="#000000" d="M108.1406,-54C110.6275,-54 113.1143,-54 115.6011,-54"></path>
+<polygon fill="#000000" stroke="#000000" points="115.8248,-57.5001 125.8248,-54 115.8247,-50.5001 115.8248,-57.5001"></polygon>
+</g>
+<g id="node5" class="node">
+<polygon fill="none" stroke="#000000" points="234,-252 126,-252 126,-144 234,-144 234,-252"></polygon>
+<text text-anchor="middle" x="180" y="-193.8" font-family="sans-serif" font-size="14.00" fill="#000000">analysis</text>
+</g>
+<g id="edge4" class="edge">
+<path fill="none" stroke="#000000" d="M180,-108.3328C180,-116.6246 180,-125.2496 180,-133.7298"></path>
+<polygon fill="#000000" stroke="#000000" points="176.5001,-133.97 180,-143.97 183.5001,-133.9701 176.5001,-133.97"></polygon>
+</g>
+<g id="node6" class="node">
+<polygon fill="none" stroke="#000000" points="360,-108 252,-108 252,0 360,0 360,-108"></polygon>
+<text text-anchor="middle" x="306" y="-49.8" font-family="sans-serif" font-size="14.00" fill="#000000">scRNA-seq</text>
+</g>
+<g id="edge10" class="edge">
+<path fill="none" stroke="#000000" d="M244.3643,-54C246.8511,-54 249.3379,-54 251.8248,-54"></path>
+<polygon fill="#000000" stroke="#000000" points="244.1407,-50.5001 234.1406,-54 244.1406,-57.5001 244.1407,-50.5001"></polygon>
+</g>
+<g id="node7" class="node">
+<polygon fill="none" stroke="#000000" points="360,-252 252,-252 252,-144 360,-144 360,-252"></polygon>
+<text text-anchor="middle" x="306" y="-193.8" font-family="sans-serif" font-size="14.00" fill="#000000">aggregation</text>
+</g>
+<g id="edge5" class="edge">
+<path fill="none" stroke="#000000" d="M306,-108.3328C306,-116.6246 306,-125.2496 306,-133.7298"></path>
+<polygon fill="#000000" stroke="#000000" points="302.5001,-133.97 306,-143.97 309.5001,-133.9701 302.5001,-133.97"></polygon>
+</g>
+<g id="node8" class="node">
+<polygon fill="none" stroke="#000000" points="360,-396 252,-396 252,-288 360,-288 360,-396"></polygon>
+<text text-anchor="middle" x="306" y="-337.8" font-family="sans-serif" font-size="14.00" fill="#000000">pbRNA-seq</text>
+</g>
+<g id="edge6" class="edge">
+<path fill="none" stroke="#000000" d="M306,-252.3328C306,-260.6246 306,-269.2496 306,-277.7298"></path>
+<polygon fill="#000000" stroke="#000000" points="302.5001,-277.97 306,-287.97 309.5001,-277.9701 302.5001,-277.97"></polygon>
+</g>
+<g id="edge8" class="edge">
+<path fill="none" stroke="#000000" d="M180,-287.97C180,-279.6864 180,-271.0638 180,-262.5801"></path>
+<polygon fill="#000000" stroke="#000000" points="183.5001,-262.3328 180,-252.3328 176.5001,-262.3328 183.5001,-262.3328"></polygon>
+</g>
+<g id="edge7" class="edge">
+<path fill="none" stroke="#000000" d="M244.3643,-342C246.8511,-342 249.3379,-342 251.8248,-342"></path>
+<polygon fill="#000000" stroke="#000000" points="244.1407,-338.5001 234.1406,-342 244.1406,-345.5001 244.1407,-338.5001"></polygon>
+</g>
+</g>
+</svg>

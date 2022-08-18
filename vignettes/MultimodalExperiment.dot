@@ -1,0 +1,30 @@
+digraph {
+    node [shape = "square", fixedsize = true, fontname = "sans-serif", width = 1.5]
+
+    A [label = "RNA-seq"]
+    B [label = "deconvolution"]
+    C [label = "dcRNA-seq"]
+    D [label = "projection"]
+    E [label = "analysis"]
+    F [label = "scRNA-seq"]
+    G [label = "aggregation"]
+    H [label = "pbRNA-seq"]
+    I [label = "projection"]
+
+    A -> B
+    B -> C
+    C -> D
+    D -> E
+
+    F -> G
+    G -> H
+    I -> H [dir = "back"]
+    I -> E
+
+    A -> I
+    D -> F [dir = "back"]
+
+    {rank = "same"; A; I; H;}
+    {rank = "same"; B; E; G;}
+    {rank = "same"; C; D; F;}
+}

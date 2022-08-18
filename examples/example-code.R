@@ -1,0 +1,60 @@
+ME <-
+    MultimodalExperiment()
+
+bulkExperiments(ME) <-
+    ExperimentList(
+        pbRNAseq = pbRNAseq
+    )
+
+singleCellExperiments(ME) <-
+    ExperimentList(
+        scADTseq = scADTseq,
+        scRNAseq = scRNAseq
+    )
+
+subjectMap(ME)[["subject"]] <-
+    "SUBJECT-1"
+
+sampleMap(ME)[["subject"]] <-
+    "SUBJECT-1"
+
+cellMap(ME)[["sample"]] <-
+    "SAMPLE-1"
+
+ME <-
+    propagate(ME)
+
+experimentData(ME)[["published"]] <-
+    c(NA_character_, "2018-11-19", "2018-11-19") |>
+    as.Date()
+
+subjectData(ME)[["condition"]] <-
+    as.character("healthy")
+
+sampleData(ME)[["sampleType"]] <-
+    as.character("peripheral blood mononuclear cells")
+
+cellType <- function(x) {
+    if (x[["CD4"]] > 0L) {
+        return("T Cell")
+    }
+
+    if (x[["CD14"]] > 0L) {
+        return("Monocyte")
+    }
+
+    if (x[["CD19"]] > 0L) {
+        return("B Cell")
+    }
+
+    if (x[["CD56"]] > 0L) {
+        return("NK Cell")
+    }
+
+    NA_character_
+}
+
+cellData(ME)[["cellType"]] <-
+    experiment(ME, "scADTseq") |>
+    apply(2L, cellType)
+

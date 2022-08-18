@@ -1,0 +1,40 @@
+Package: MultimodalExperiment
+Title: Integrative Bulk and Single-Cell Experiment Container
+Version: 0.99.0
+Authors@R:
+    person(given = "Lucas",
+           family = "Schiffer",
+           role = c("aut", "cre"),
+           email = "schiffer.lucas@gmail.com",
+           comment = c(ORCID = "0000-0003-3628-0326"))
+Description:
+    MultimodalExperiment is an S4 class that integrates bulk and single-cell
+    experiment data; it is optimally storage-efficient and its methods are
+    exceptionally fast. It effortlessly represents multimodal data of any nature
+    and features normalized experiment, subject, sample, and cell annotations
+    which are related to underlying biological experiments through maps. Its
+    coordination methods are opt-in and employ database-like join operations
+    internally to deliver fast and flexible management of multimodal data.
+License: Artistic-2.0
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 4.2.0),
+    IRanges,
+    S4Vectors
+Imports:
+    BiocGenerics,
+    MultiAssayExperiment,
+    methods,
+    utils
+Suggests:
+    BiocStyle,
+    knitr,
+    rmarkdown
+biocViews:
+    DataRepresentation,
+    Infrastructure,
+    SingleCell
+VignetteBuilder: knitr
+RoxygenNote: 7.2.1
+Roxygen: list(markdown = TRUE)
